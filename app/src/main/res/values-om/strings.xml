@@ -1,4 +1,9 @@
 <resources>
-<string name="app_name">Android Labs</string>
-<string name="hello_message">Akkam Addunyaa!</string>
+    <string name="app_name">Android Labs</string>
+    <string name="hello_message">Akkam Addunyaa!</string>
+    <string name="title">GUI koo kana ilaali</string>
+    <string name="click_button">"Kana tuqi"</string>
+    <string name="click_checkBox">"Kanatti bu'i!"</string>
+    <string name="switch_box">"Cufi/bani" </string>
+    <string name="insert_text">"Asitti barreessi" </string>
 </resources>
