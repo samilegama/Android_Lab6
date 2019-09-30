@@ -6,4 +6,17 @@
     <string name="click_checkBox">"Check this out!"</string>
     <string name="switch_box">"Switch on/off" </string>
     <string name="insert_text">"Type here" </string>
+    <string name="email_message">"Enter your email address:"</string>
+    <string name="email_here">Type your email here:</string>
+    <string name="login_message">"LOGIN"</string>
+    <string name="password_message">"Type your password:"</string>
+    <string name="yourProfile_message">"Your profile"</string>
+    <string name="yourName_message">Your name:</string>
+    <string name="yourNameEditText">Enter your name</string>
+    <string name="yourEmailTextView">Your email:</string>
+    <string name="yourEmail_message">Enter your email</string>
+    <string name="yourPicture_message">Your picture</string>
+    <string name="textView_message">Click the botton above to take a picture</string>
+
+
 </resources>
