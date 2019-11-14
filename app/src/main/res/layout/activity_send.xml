@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipToPadding="false">
+
+    <ImageView
+        android:id="@+id/receiverAvatar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/row_receive" />
+
+    <TextView
+        android:id="@+id/textViewMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@+id/receiverAvatar"
+        android:textAlignment="viewEnd"
+        android:elevation="2dp"
+        android:text="How are you doing? This is a long message that should probably wrap."
+        android:textSize="18dp" />
+
+</RelativeLayout>

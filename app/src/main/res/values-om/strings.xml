@@ -2,23 +2,29 @@
     <string name="app_name">Android Labs</string>
     <string name="hello_message">Akkam Addunyaa!</string>
     <string name="title">GUI koo kana ilaali</string>
-    <string name="click_button">"Kana tuqi"</string>
-    <string name="click_checkBox">"Kanatti bu'i!"</string>
-    <string name="switch_box">"Cufi/bani" </string>
-    <string name="insert_text">"Asitti barreessi" </string>
+    <string name="click_button">Kana tuqi</string>
+    <string name="click_checkBox">Kanatti bu\'i!</string>
+    <string name="switch_box">Cufi/bani </string>
+    <string name="insert_text">Asitti barreessi </string>
+    <string name="email_message">Imeelii kee:</string>
+    <string name="email_here">Imeelii kee asitti barreessi</string>
+    <string name="login_message">SEENI</string>
+    <string name="password_message">Jecha dhoksaa kee barreessi:</string>
+    <string name="yourProfile_message">Odeeffannoo kee</string>
+    <string name="yourName_message">Maqaa kee:</string>
+    <string name="yourNameEditText">Maqaa kee barreessi</string>
+    <string name="yourEmailTextView">Imeelii kee:</string>
+    <string name="yourEmail_message">Imeelii kee barreessi</string>
+    <string name="yourPicture_message">Suuraa kee</string>
+    <string name="textView_message">Suuraa kaasuuf mallattoo olii tuqi</string>
+    <string name="chat_message">Gara chaatii deemi</string>
+    <string name="SendText">Ergi</string>
+    <string name="ChatHint">Asitti barreessi</string>
+    <string name="ReceiveText">Fudhadhu</string>
 
-        <string name="email_message">"Enter your email address:"</string>
-        <string name="email_here">Type your email here:</string>
-        <string name="login_message">"LOGIN"</string>
-        <string name="password_message">"Type your password:"</string>
-        <string name="yourProfile_message">"Your profile"</string>
-        <string name="yourName_message">Your name:</string>
-        <string name="yourNameEditText">Enter your name</string>
-        <string name="yourEmailTextView">Your email:</string>
-        <string name="yourEmail_message">Enter your email</string>
-        <string name="yourPicture_message">Your picture</string>
-        <string name="textView_message">Click the botton above to take a picture</string>
-
-
-
+    <string name="GoToWeather">Gara Fuula Haala-qilleensaa deemi</string>
+    <string name="currentTemp">Hoina yeroo ammaa</string>
+    <string name="minTemp">Hoina Gad-aanaa</string>
+    <string name="maxTemp">Ho/ina Ol-aanaa</string>
+    <string name="uvRating">UV</string>
 </resources>

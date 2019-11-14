@@ -1,4 +1,4 @@
-package android.labs.androidlabs;
+package android.labs.androidlabs.test;
 
 import org.junit.Test;
 

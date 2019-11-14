@@ -1,4 +1,32 @@
 <resources>
-<string name="app_name">Android Labs</string>
-<string name="hello_message">Bonjoue!</string>
+    <string name="app_name">Android Labs</string>
+    <string name="hello_message">Bonjoue!</string>
+    <string name="title">Regarde mon GUI</string>
+    <string name="click_button">Cliquez ici</string>
+    <string name="click_checkBox">Regarde ça!</string>
+    <string name="switch_box">Allumer / éteindre </string>
+    <string name="insert_text">Écrivez ici</string>
+    <string name="email_message">Entrez votre adresse email:</string>
+    <string name="email_here">Tapez votre email ici:</string>
+    <string name="login_message">"S'IDENTIFIER"</string>
+    <string name="password_message">Tapez votre mot de passe:</string>
+    <string name="yourProfile_message">Votre profil</string>
+    <string name="yourName_message">Votre nom:</string>
+    <string name="yourNameEditText">Entrez votre nom</string>
+    <string name="yourEmailTextView">Votre email:</string>
+    <string name="yourEmail_message">Entrer votre Email</string>
+    <string name="yourPicture_message">Ta photo</string>
+    <string name="textView_message">Cliquez sur le bouton ci-dessus pour prendre une photo</string>
+
+//Lab5
+    <string name="chat_message">Aller discuter</string>
+    <string name="SendText">Envoyer</string>
+    <string name="ChatHint">Écrivez ici</string>
+    <string name="ReceiveText">Recevoir</string>
+//Lab6
+    <string name="GoToWeather">Aller à la page météo</string>
+    <string name="currentTemp">Température actuelle</string>
+    <string name="minTemp">Température minimale</string>
+    <string name="maxTemp">Température maximale</string>
+    <string name="uvRating">UV</string>
 </resources>
