@@ -29,4 +29,6 @@
     <string name="minTemp">Température minimale</string>
     <string name="maxTemp">Température maximale</string>
     <string name="uvRating">UV</string>
+    <string name="WeatherBtn">Aller à la météo</string>
+
 </resources>

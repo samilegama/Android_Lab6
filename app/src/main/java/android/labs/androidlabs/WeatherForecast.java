@@ -7,6 +7,7 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
@@ -49,14 +50,53 @@ public class WeatherForecast extends AppCompatActivity {
         uvRating = (TextView)findViewById(R.id.uvRating);
         progressBar = (ProgressBar)findViewById(R.id.progressBar);
         progressBar.setVisibility(View.VISIBLE);
+
+
+
+    }
+
+    private static class HTTPUtils {
+        public static Bitmap getImage(URL url) {
+            HttpURLConnection connection = null;
+
+            try {
+                connection = (HttpURLConnection) url.openConnection();
+                connection.connect();
+                int responseCode = connection.getResponseCode();
+                if (responseCode == 200) {
+                    return BitmapFactory.decodeStream(connection.getInputStream());
+
+                } else
+                    return null;
+            } catch (Exception e) {
+                return null;
+            } finally {
+                if (connection != null) {
+                    connection.disconnect();
+                }
+            }
+        }
+        public  static Bitmap getImage(String urlString) {
+
+            try {
+                URL url = new URL(urlString);
+
+                return getImage(url);
+
+            } catch (MalformedURLException e) {
+                return null;
+            }
+        }
+
     }
 
     // a subclass of AsyncTask                  Type1    Type2    Type3
     private class ForecastQuery extends AsyncTask<String, Integer, String>
     {
+        private final String IMG_URL = "http://openweathermap.org/img/w/";
         String tempValue, min, max, uv, weatherIcon;
         Bitmap image;
-        private final String IMG_URL = "http://openweathermap.org/img/w/";
+
         @Override
         protected String doInBackground(String ... params) {
             try {
@@ -203,40 +243,5 @@ public class WeatherForecast extends AppCompatActivity {
             weather.setImageBitmap(image);
             progressBar.setVisibility(View.INVISIBLE);
         }
-    }
-
-    private static class HTTPUtils {
-        public static Bitmap getImage(URL url) {
-            HttpURLConnection connection = null;
-
-            try {
-                connection = (HttpURLConnection) url.openConnection();
-                connection.connect();
-                int responseCode = connection.getResponseCode();
-                if (responseCode == 200) {
-                    return BitmapFactory.decodeStream(connection.getInputStream());
-
-                } else
-                    return null;
-            } catch (Exception e) {
-                return null;
-            } finally {
-                if (connection != null) {
-                    connection.disconnect();
-                }
-            }
-        }
-        public  static Bitmap getImage(String urlString) {
-
-            try {
-                URL url = new URL(urlString);
-
-                return getImage(url);
-
-            } catch (MalformedURLException e) {
-                return null;
-            }
-        }
-
     }
 }

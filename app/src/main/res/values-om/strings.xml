@@ -17,14 +17,17 @@
     <string name="yourEmail_message">Imeelii kee barreessi</string>
     <string name="yourPicture_message">Suuraa kee</string>
     <string name="textView_message">Suuraa kaasuuf mallattoo olii tuqi</string>
+    //Lab5
     <string name="chat_message">Gara chaatii deemi</string>
     <string name="SendText">Ergi</string>
     <string name="ChatHint">Asitti barreessi</string>
     <string name="ReceiveText">Fudhadhu</string>
-
+    //Lab6
     <string name="GoToWeather">Gara Fuula Haala-qilleensaa deemi</string>
     <string name="currentTemp">Hoina yeroo ammaa</string>
     <string name="minTemp">Hoina Gad-aanaa</string>
     <string name="maxTemp">Ho/ina Ol-aanaa</string>
     <string name="uvRating">UV</string>
+    <string name="WeatherBtn">Gara tilmaama haala qilleensaa deemi</string>
+
 </resources>

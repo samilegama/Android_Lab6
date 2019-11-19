@@ -41,9 +41,17 @@
         android:text="@string/uvRating"/>
 
     <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:visibility="invisible"
-        android:id="@+id/progressBar"
-        style="?android:attr/progressBarStyleHorizontal"/>
+        android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/WeatherBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Go to Weather Forecast" />
+
+
 </RelativeLayout>

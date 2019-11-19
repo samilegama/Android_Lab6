@@ -7,6 +7,7 @@ import android.provider.MediaStore;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.content.SharedPreferences;
@@ -16,6 +17,8 @@ public class ProfileActivity extends Activity {
     static final int REQUEST_IMAGE_CAPTURE = 1;
     private static final String ACTIVITY_NAME="ProfileActivity";
     private ImageButton mImageButton;
+
+    private Button chatButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,7 +36,33 @@ public class ProfileActivity extends Activity {
             }
         });
 
+
+        Log.e(ACTIVITY_NAME, "in function: onCreate()");
+
+        chatButton = (Button) findViewById(R.id.chatButton);
+
+        chatButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent itLab4 = new Intent(ProfileActivity.this, ChatRoomActivity.class);
+                startActivityForResult(itLab4, 345);
+            }
+        });
+
+
+        Button goToWeatherBtn = (Button)findViewById(R.id.WeatherBtn);
+        goToWeatherBtn.setOnClickListener(c -> {
+            Intent goToMenuPage = new Intent(ProfileActivity.this, WeatherForecast.class);
+
+            startActivityForResult(goToMenuPage, 234);
+
+        });
+
+        Log.d(ACTIVITY_NAME, "In function: onCreate()");
     }
+
+
     private void dispatchTakePictureIntent() {
         Log.d(ACTIVITY_NAME,"dispatchTakePictureIntent");
         Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
